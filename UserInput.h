@@ -1,17 +1,18 @@
-//
-// Created by regal on 9/11/25.
-//
-
 #ifndef FILEMONITOR_USERINPUT_H
 #define FILEMONITOR_USERINPUT_H
 
-#include <vector>
 #include <string>
+#include <vector>
 
 namespace UserInput
 {
-    std::vector<std::string> getPaths();
     int getChoice();
+
+    std::string getPath();
+
+    std::string getSenderEmail();
+    std::string getAppPassword();
+    std::vector<std::string> getRecipients();
 }
 
-#endif //FILEMONITOR_USERINPUT_H
+#endif // FILEMONITOR_USERINPUT_H

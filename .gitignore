@@ -1,0 +1,37 @@
+# Build directories
+build/
+build-*/
+cmake-build*/
+
+# Compiled files
+*.exe
+*.dll
+*.so
+*.a
+*.o
+*.obj
+*.lib
+*.pdb
+*.ilk
+
+# CMake generated files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+build.ninja
+.ninja_deps
+.ninja_log
+
+# IDE files
+.vscode/
+.idea/
+.vs/
+
+# Credentials and environment files
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log

@@ -1,16 +1,18 @@
-//
-// Created by regal on 9/11/25.
-//
-
 #include "FileMonitor.h"
 
-#ifdef __linux__
+#ifdef _WIN32
+#include "FileMonitorWindows.h"
+#elif defined(__linux__)
 #include "FileMonitorLinux.h"
 #endif
 
 std::unique_ptr<IFileMonitor> createFileMonitor()
 {
-#ifdef __linux__
+#ifdef _WIN32
+    return std::make_unique<FileMonitorWindows>();
+#elif defined(__linux__)
     return std::make_unique<FileMonitorLinux>();
+#else
+    return nullptr;
 #endif
 }
