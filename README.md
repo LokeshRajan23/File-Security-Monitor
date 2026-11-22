@@ -1,5 +1,5 @@
 # FileMonitorCPP
-A simple File Monitor written using C++
+Advanced Real Time File Security Monitor written using C++
 
 ## How to run
 
